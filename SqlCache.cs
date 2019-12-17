@@ -16,7 +16,7 @@ public class SqlCache : ICache, IDisposable
 
     private IDistributedCache _cache;
 
-    public EmpSqlCache(string sqlConnection, int slidingExpiryTimeInSeconds)
+    public SqlCache(string sqlConnection, int slidingExpiryTimeInSeconds)
     {
         if (_cache == null)
         {
